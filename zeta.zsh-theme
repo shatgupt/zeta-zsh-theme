@@ -23,7 +23,8 @@ local white_bold=$fg_bold[white]
 
 local highlight_bg=$bg[red]
 
-local zeta='ζ'
+# local zeta='ζ'
+local zeta='$'
 
 # Machine name.
 function get_box_name {
@@ -98,7 +99,6 @@ function get_space {
 # > command
 function print_prompt_head {
     local left_prompt="\
-%{$blue%}# \
 %{$green_bold%}$(get_usr_name)\
 %{$blue%}@\
 %{$cyan_bold%}$(get_box_name): \
